@@ -5,14 +5,14 @@
 using namespace std;
 int main()
 {
-    char op;
-    int a,b;
-    float res;
-    cout<<"Enter the operator(+,-,*,/):"<<endl;
-    cin>>op;
-    cout<<"Enter the two operands:"<<endl;
-    cin>>a>>b;
-    switch(op)
+    char op;        // declaring a character variable
+    int a,b;        // declaring a integer variable
+    float res;      // declaring a float variable
+    cout << "Enter the operator(+,-,*,/):" << endl;
+    cin >> op;      // reading an operator
+    cout << "Enter the two operands:" << endl;
+    cin >> a >> b;  // reading two no.
+    switch(op)      // switch statements
     {
         case '+' : res = a + b;
             break;
@@ -20,19 +20,19 @@ int main()
             break;
         case '*' : res = a * b;
             break;
-        case '/' :if(b!=0)
-                    {
+        case '/' :if(b != 0)
+                  {
                         res = a / b;
-                    }
-                    else
-                    {
-                        cout<<"Division not possible!"<<endl;
+                  }
+                  else
+                  {
+                        cout << "Division not possible!" << endl;
                         exit (0);
-                    }
-                    break;
-        default: cout<<"You have entered wrong cases"<<endl;
+                  }
+                    
+        default: cout << "You have entered wrong cases" << endl;
         exit(0);
     }
-    cout<<"The Result is = "<<res;
+    cout << "The Result is = " << res;      // printing result 
     return 0;
 }
